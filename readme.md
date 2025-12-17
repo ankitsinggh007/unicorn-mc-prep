@@ -40,7 +40,7 @@ Each folder contains:
 ---
 
 ## ⚙️ How This Repo Helps
-- Builds **real-round reflexes** using the [R-MCA](#) (React Machine-Coding Algorithm) framework  
+- Builds **real-round reflexes** using the [R-MCA](https://www.notion.so/Framework-to-solve-MC-2ccd31fe264280a2a1eade4817ec29c6?source=copy_link) (React Machine-Coding Algorithm) framework  
 - Ensures every task is **reviewed for production readiness**  
 - Acts as a living portfolio of **interview-quality React builds**
 
