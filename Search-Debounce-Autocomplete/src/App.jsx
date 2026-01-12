@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <SearchUsers />
+      {/* <SearchUsers /> */}
       <SearchBox
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
