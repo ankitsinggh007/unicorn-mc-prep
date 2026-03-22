@@ -13,13 +13,13 @@ export default function UserModal() {
         navigate(-1);
       }
     },
-    [navigate]
+    [navigate],
   );
   const handleTabKey = useCallback((e) => {
     if (e.key !== "Tab") return;
 
     const focusableElements = modalRef.current.querySelectorAll(
-      'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]'
+      'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]',
     );
 
     const first = focusableElements[0];
@@ -36,7 +36,6 @@ export default function UserModal() {
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    console.log(document.activeElement);
     previousActiveElement.current = document.activeElement;
     // Move focus into modal on open
     modalRef.current?.focus();

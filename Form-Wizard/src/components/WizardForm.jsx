@@ -8,8 +8,6 @@ export default function WizardForm({
   totalPage,
   submitHandler,
 }) {
-  console.log(currentStep, totalPage);
-
   return (
     <form className="border border-green-300 w-[50%]  flex flex-col gap-12 px-4 py-2 ">
       {!(totalPage === currentStep + 2) && (

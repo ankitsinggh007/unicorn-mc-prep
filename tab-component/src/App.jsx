@@ -40,7 +40,6 @@ function App() {
     setActiveTab(newPointer);
   };
 
-  console.log(activeTab);
   return (
     <>
       <section id="spacer">
