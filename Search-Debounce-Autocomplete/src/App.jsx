@@ -19,7 +19,7 @@ function App() {
     }
     let id = setTimeout(() => {
       let filteredUser = data.filter((user) =>
-        user.name.toLowerCase().includes(searchTerm.toLowerCase())
+        user.name.toLowerCase().includes(searchTerm.toLowerCase()),
       );
       setSuggestions(filteredUser);
     }, 300);
@@ -29,9 +29,8 @@ function App() {
 
   let fetchUser = (name) => {
     let selectedUser = data.find(
-      (user) => user.name.toLowerCase() === name.toLowerCase()
+      (user) => user.name.toLowerCase() === name.toLowerCase(),
     );
-    console.log(selectedUser, "selectedUser");
     setSuggestions([]);
     setUser(selectedUser || {});
     setSearchTerm(name);

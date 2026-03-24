@@ -36,7 +36,6 @@ function App() {
     new Set(PRODUCTS.map(({ category }) => category)),
   );
 
-  console.log(derivedData, filter, "d");
   return (
     <main>
       <input

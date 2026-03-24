@@ -1,7 +1,6 @@
 import React from "react";
 
 function FinalStep({ formData }) {
-  console.log(formData, formData.name);
   return (
     <div>
       {Object.keys(formData).map((key, index) => {

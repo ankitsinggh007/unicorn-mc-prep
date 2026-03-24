@@ -24,14 +24,13 @@ function App() {
   filteredList = filteredList.filter(
     (user) =>
       user.name.toLowerCase().includes(inputTerm.toLowerCase()) ||
-      user.email.toLowerCase().includes(inputTerm.toLowerCase())
+      user.email.toLowerCase().includes(inputTerm.toLowerCase()),
   );
 
   let paginated = filteredList.slice(
     (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    currentPage * itemsPerPage,
   );
-  console.log(userList, "user");
 
   return (
     <main className="m-auto p-1 flex flex-col justify-evenly items-center gap-4 w-2xl">

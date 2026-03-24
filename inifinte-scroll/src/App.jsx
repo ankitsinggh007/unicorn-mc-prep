@@ -124,7 +124,6 @@ function App() {
     };
   }, []);
 
-  console.log({ recipes, loader, error, page, hasMore, moreLoader, moreError });
   return (
     <div>
       <FeedList
